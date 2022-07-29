@@ -1,0 +1,25 @@
+.feed{
+    flex: 0.8;
+    height: 100%;
+    background-color: #F1F1F1;
+}
+
+.feed > .feed__header{
+    height: 10%;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.feed > .feed__header > .feedHeader__right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.feed > .feed__header > .feedHeader__left{
+    margin-left: 10px;
+}

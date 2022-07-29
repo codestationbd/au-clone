@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import './Sidebar.css'
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import RemoveIcon from '@mui/icons-material/Remove';
 import DiamondIcon from '@mui/icons-material/Diamond';
 import AddIcon from '@mui/icons-material/Add';
 import { useSidebar } from 'context/SidebarContext';
 
 function Sidebar( ) {
-  const { sidebarIsCollapsed } = useSidebar( )
+  const { sidebarIsCollapsed , plusButtonIsVisible , minusButtonIsVisible , handlePlusButton , handleMinusButton } = useSidebar( )
   return (
     <div className={ !sidebarIsCollapsed ? 'sidebar' : 'sidebar__collapsed'}>
       <div className='sidebar__top'>
@@ -26,7 +27,8 @@ function Sidebar( ) {
               <div className='sidebarBodyOption__singleItem1'>
                 <DiamondIcon style={{ color : 'gray'}}/>
                 <h5 style={{ fontSize : 17,fontWeight : 300, fontFamily : 'nunito' , marginLeft : 8 , color : 'gray'}}>Academic and Finance Setup</h5>
-                <AddIcon style={{ marginLeft : 'auto' , marginRight : 5 , color : 'gray'}}/>
+                { plusButtonIsVisible ?  <AddIcon style={{ marginLeft : 'auto' , marginRight : 5 , color : 'gray'}}  onClick={( ) => handlePlusButton( )}/> :  <RemoveIcon style={{ marginLeft : 'auto' , marginRight : 5 , color : 'gray'}} onClick={ ( ) => handleMinusButton( )} />}
+               
               </div>
           </div>
 
@@ -37,13 +39,13 @@ function Sidebar( ) {
                       <div className='sidebarBodyOption__singleItem'>
                           <DiamondIcon style={{ color : 'gray'}}/>
                           <h5 style={{ fontSize : 17,fontWeight : 300, fontFamily : 'nunito' , marginLeft : 8 , color : 'gray'}}>Academic</h5>
-                          <AddIcon style={{ marginLeft : 'auto' , marginRight : 5 , color : 'gray'}}/>
+                          { plusButtonIsVisible ?  <AddIcon style={{ marginLeft : 'auto' , marginRight : 5 , color : 'gray'}}  onClick={( ) => handlePlusButton( )}/> :  <RemoveIcon style={{ marginLeft : 'auto' , marginRight : 5 , color : 'gray'}} onClick={ ( ) => handleMinusButton( )} />}
                         </div>
 
                         <div className='sidebarBodyOption__singleItem'>
                           <DiamondIcon style={{ color : 'gray'}}/>
                           <h5 style={{ fontSize : 17,fontWeight : 300, fontFamily : 'nunito' , marginLeft : 8 , color : 'gray'}}>Examination</h5>
-                          <AddIcon style={{ marginLeft : 'auto' , marginRight : 5 , color : 'gray'}}/>
+                          { plusButtonIsVisible ?  <AddIcon style={{ marginLeft : 'auto' , marginRight : 5 , color : 'gray'}}  onClick={( ) => handlePlusButton( )}/> :  <RemoveIcon style={{ marginLeft : 'auto' , marginRight : 5 , color : 'gray'}} onClick={ ( ) => handleMinusButton( )} />}
                         </div>
 
 

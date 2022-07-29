@@ -1,17 +1,22 @@
 .feed{
-    flex: 0.8;
+   flex: 0.8;
+   display: flex;
+   flex-direction: column;
     height: 100%;
     background-color: #F1F1F1;
 }
 
 .feed__collapsed{
     flex: 0.9;
+    display: flex;
+   flex-direction: column;
     height: 100%;
     background-color: #F1F1F1;
 }
 
 .feed > .feed__header{
     height: 10%;
+    width: 100%;
     background-color: white;
     align-items: center;
     display: flex;

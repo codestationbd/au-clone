@@ -6,6 +6,10 @@
     flex: 0.2;
 }
 
+.sidebar__collapsed{
+    flex: 0.1;
+}
+
 .sidebar > .sidebar__top{
     display: flex;
     flex-direction: row;

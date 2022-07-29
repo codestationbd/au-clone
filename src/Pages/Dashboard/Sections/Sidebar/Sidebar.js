@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Sidebar.css'
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import DiamondIcon from '@mui/icons-material/Diamond';
 import AddIcon from '@mui/icons-material/Add';
+import { useSidebar } from 'context/SidebarContext';
 
 function Sidebar( ) {
+  const { sidebarIsCollapsed } = useSidebar( )
   return (
-    <div className="sidebar">
+    <div className={ !sidebarIsCollapsed ? 'sidebar' : 'sidebar__collapsed'}>
       <div className='sidebar__top'>
-          <img src='https://www.bkacontent.com/wp-content/uploads/2020/10/Depositphotos_336730000_l-2015.jpg'/>
+          <img src=''/>
           <h1>My Asian</h1>
       </div>
       <div className='sidebar__body'>

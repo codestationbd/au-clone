@@ -8,6 +8,10 @@
 
 .sidebar__collapsed{
     flex: 0.1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #2B2E33;
 }
 
 .sidebar > .sidebar__top{

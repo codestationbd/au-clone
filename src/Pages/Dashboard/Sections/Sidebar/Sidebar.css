@@ -31,6 +31,7 @@
 .sidebar > .sidebar__body{
     display: flex;
     flex-direction: column;
+    
 }
 
 .sidebar > .sidebar__body > .sidebarBody__top{
@@ -52,14 +53,23 @@
     display: flex;
     flex-direction: column;
     margin-left: 15px;
+    margin-top: 20px;
 }
 
 .sidebar > .sidebar__body > .sidebarBody__options > .sidebarBody__option{
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
+    margin-top: 20px;
+    cursor: pointer;
     
 }
+
+
+.sidebar > .sidebar__body > .sidebarBody__options > .sidebarBody__option > .sidebarBodyOption__singleItemOptions{
+    display: flex;flex-direction: column;
+}
+
+
 
 .sidebar > .sidebar__body > .sidebarBody__options > .sidebarBody__option > h3{
     font-family: nunito;
@@ -68,7 +78,21 @@
     color: #929292;
 }
 
-.sidebar > .sidebar__body > .sidebarBody__options > .sidebarBody__option > .sidebarBodyOption__singleItem{
+
+.sidebar > .sidebar__body > .sidebarBody__options > .sidebarBody__option1 > .sidebarBodyOption__singleItem1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.sidebar > .sidebar__body > .sidebarBody__options > .sidebarBody__option1 {
+    margin-top: 25px;
+}
+
+.sidebar > .sidebar__body > .sidebarBody__options > .sidebarBody__option > .sidebarBodyOption__singleItemOptions > .sidebarBodyOption__singleItem{
     display: flex;
     flex-direction: row;
     align-items: center;

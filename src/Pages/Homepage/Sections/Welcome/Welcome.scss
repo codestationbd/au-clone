@@ -1,0 +1,140 @@
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #337ab7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    color:#212121;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #444444;
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.container {
+    background-color: #fff;
+    padding: 81px 0 94px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.about{
+    font-size: 34px;
+    color: #002147;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.about-title{
+    font-size: 40px;
+    color: #002147;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.left{
+    width: 30%;
+    margin-left: 20px;
+}
+
+.left img {
+    max-width: 100%;
+}
+
+.right{
+    width: 66%;
+    max-height: 215px;
+}
+.right h3 {
+    font-size: 24px;
+}
+.right h5 {
+    margin-top: -20px;
+    font-size: 14px;
+}
+
+.right p{
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+
+.read-more{
+    float: right;
+}
+
+.vc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.vc_left{
+    width: 30%;
+    margin-left: 20px;
+}
+
+.vc_right{
+    width: 66%;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.vc_right h3 {
+    font-size: 24px;
+}
+.vc_right p{
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+
+.poster{
+    display: flex;
+    padding: 0px 25px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+    height: fit-content;
+
+    > img {
+        width: 50%;
+        object-fit: contain;
+    }
+
+}

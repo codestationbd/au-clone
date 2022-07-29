@@ -1,10 +1,13 @@
 import React from "react";
 import "./BlueTiles.scss";
+import { useNavigate } from "react-router-dom";
 
 export default function BlueTiles() {
+    let navigate = useNavigate()
+
     return (
         <section id="bluetiles">
-            <div className="card">
+            <div className="card" onClick={()=>navigate("/login")}>
                 <div className="details">
                     <h1>My Asian</h1>
                     <p>Online Student Portal</p>

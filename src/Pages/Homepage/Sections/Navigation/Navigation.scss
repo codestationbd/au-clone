@@ -3,6 +3,8 @@ $accent-color: #fdc800;
 $nav-height: 82.5px;
 
 nav {
+    position: relative;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,89 +17,45 @@ nav {
         height: 33px;
     }
 
-    ul {
-        display: flex;
-        gap: 20px;
-        list-style-type: none;
-
-        &:first-child {
-            align-self: flex-end;
-        }
-    }
-
-
-    ul#layer1 {
-        display: flex;
-        height: 100%;
-        padding: 0;
-
-        li {
-            position: relative;
-            list-style: none;
-            color: $list-color;
-            height: 100%;
-            text-transform: uppercase;
-            font-size: 15px;
-            font-weight: 500;
-            cursor: pointer;
-
-            a {
-                padding: 0 10px;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                transition: 0.5s;
-
-                &:hover {
-                    color: $accent-color;
-                }
-            }
-
-            &:first-child {
-                a {
-                    color: $accent-color;
-                }
-            }
-
-            &:not(:last-child) {
-                border-bottom: 1px solid #1a3b61;
-            }
-        }
-    }
-
-    ul#layer2 {
-        position: absolute;
-        top: $nav-height;
-        left: 0px;
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-
-        li {
-            display: flex;
-            justify-content: space-between;
-            width: 340px;
-            color: white;
-            background-color: #002147;
-            padding: 10px 15px;
-            font-size: 15px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: 0.5s;
-
-            &:first-child {
-                color: white;
-            }
-
-            &:hover {
-                color: $accent-color;
-                background-color: #1a3b61;
-            }
-        }
-    }
-
     .custom-icon {
         padding-left: 30px;
         border-left: 1px solid #d3d3d3;
+    }
+
+    > ul {
+        display: flex;
+        list-style: none;
+        height: 100%;
+
+        li {
+            height: 100%;
+            position: relative;
+
+            button {
+                height: 100%;
+                border: none;
+                background-color: white;
+                text-transform: uppercase;
+                color: $list-color;
+                font-size: 15px;
+                font-weight: 500;
+                padding: 0 15px;
+                line-height: 22.5px;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $list-color;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 22.5px;
+                padding: 0 15px;
+            }
+        }
     }
 }

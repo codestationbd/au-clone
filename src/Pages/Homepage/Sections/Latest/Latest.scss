@@ -1,0 +1,112 @@
+$bg: #F5F5F5;
+$accent-color: #fdc800;
+$list-color: #002147;
+
+section#latest {
+    display: flex;
+    width: 100%;
+    padding: 90px 6.5vw;
+    justify-content: center;
+    gap: 30px;
+    background-color: $bg;
+
+    .news {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        > h1 {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 45px;
+        }
+
+        .cards--news {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+        }
+    }
+
+    .card--news {
+        display: flex;
+        padding: 20px;
+        gap: 16px;
+
+        img {
+            width: 170px;
+            height: 120px;
+            object-fit:cover;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            width: 336px;
+            justify-content: flex-start;
+
+            h1 {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 27px;
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                font-style: italic;
+                color: $accent-color;
+                margin: 5px 0px;
+            }
+        }
+
+        &:not(:first-child) {
+            border-top: 1px solid $bg;
+        }
+    }
+
+    .notice {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        > h1 {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 45px;
+        }
+
+        .card--notice {
+            padding: 20px;
+            background-color: white;
+
+            img {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 20px 0;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                margin: 0;
+            }
+        }
+    }
+
+    button {
+        background-color: $list-color;
+        align-self: center ;
+        padding: 12px 34px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        color: white;
+        text-transform: uppercase;
+        margin-top: 45px;
+    }
+}

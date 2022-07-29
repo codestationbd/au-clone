@@ -218,6 +218,42 @@ const data = {
             title: "Contact",
         },
     ],
+
+    latest: {
+        news: [
+            {
+                img: "AubBennar1_15August.jpg",
+                title: "National Mourning Day 2020 at AUB",
+                date: "2020-08-15"
+            },
+            {
+                img: "SeminarNewZealand.jpg",
+                title: "Career Seminar on 'Higher Study in New Zealand' held at AUB's permanent Campus, Ashulia.",
+                date: "2020-01-29"
+            },
+            {
+                img: "FamilyDay20.jpg",
+                title: "AUB Family Day 2020",
+                date: "2020-01-28"
+            },
+            {
+                img: "Seminar_AUS.jpg",
+                title: "Seminar on 'Universal Values for Peaceful Co-existence in Culturally Diverse World'",
+                date: "2020-08-15"
+            },
+            {
+                img: "AnniversAUB24th.jpg",
+                title: "24th University Day 2020",
+                date: "2020-01-04"
+            },
+            {
+                img: "victory_day_pic.jpg",
+                title: "Victory Day (2019) celebrated at AUB",
+                date: "2019-12-18"
+            }
+        ]
+    },
+
     programs_offered: [
         "BACHELOR OF BUSINESS ADMINISTRATION (BBA)",
         "B.SC.(ENGG.) IN COMPUTER SCIENCE AND ENGINEERING (CSE)",

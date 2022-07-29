@@ -8,6 +8,7 @@ import MenuItems from "Components/MenuItems/MenuItems";
 
 export default function Navigation() {
     const navLink = data.navTree;
+    const depthLevel = 0;
 
     return (
         <nav>
@@ -15,7 +16,7 @@ export default function Navigation() {
             <ul>
                 {navLink.map((menu, index) => {
                     return (
-                        <MenuItems items={menu} key={index} />
+                        <MenuItems items={menu} key={index} depthLevel={depthLevel} />
                     );
                 })}
             </ul>
